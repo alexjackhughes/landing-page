@@ -13,7 +13,25 @@ body {
   font-weight: 900;
 }
 
+h1 {
+  font-size: "5rem";
+}
+
+.has-icon-background {
+  background: #ffc0c0;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  border-radius: 50%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.has-right-margin-on-mobile {
+  @media only screen and (max-width: 600px) {
+    margin-right: 2rem;
+  }
 }

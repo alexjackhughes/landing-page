@@ -18,16 +18,17 @@ const Section: React.FC<Props> = ({
 }) => (
   <>
     <section className="hero is-info is-fullheight">
-      <div className="hero-head">
-        <h2 className="title">
-          <CountUp
-            start={start}
-            end={end}
-            duration={3}
-            delay={5} // want to do on start when component is visited
-            onStart={() => console.log("Started! 💨")}
-          />
-        </h2>
+      <div className="hero-head has-margin-top-large">
+        <div className="container">
+          <h2 className="title is-1 is-pulled-right has-right-margin-on-mobile">
+            <CountUp
+              start={start}
+              end={end}
+              duration={3}
+              delay={5} // TODO: set onStart with Tornis based on percentage of page viewed
+            />
+          </h2>
+        </div>
       </div>
       <div className="hero-body">
         <Layout>
@@ -35,33 +36,36 @@ const Section: React.FC<Props> = ({
           <h3 className="subtitle">{description}</h3>
         </Layout>
       </div>
-      <div className="hero-foot">
-        <nav className="level is-mobile">
-          <div className="level-item has-text-centered">
-            <div>
-              <p className="heading">Tweets</p>
-              <p className="title">3,456</p>
+      <div className="hero-foot has-margin-bottom-large">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-one-third">
+              <nav className="level is-mobile">
+                <div className="level-item has-text-centered">
+                  <div>
+                    <span className="icon fad fa-acorn fa-3x is-large has-text-white" />
+                    <p className="heading">Followers</p>
+                    <p className="title">456K</p>
+                  </div>
+                </div>
+                <div className="level-item has-text-centered">
+                  <div>
+                    <span className="icon fad fa-acorn fa-3x is-large has-text-white" />
+                    <p className="heading">Followers</p>
+                    <p className="title">456K</p>
+                  </div>
+                </div>
+                <div className="level-item has-text-centered">
+                  <div>
+                    <span className="icon fad fa-acorn fa-3x is-large has-text-white" />
+                    <p className="heading">Followers</p>
+                    <p className="title">456K</p>
+                  </div>
+                </div>
+              </nav>
             </div>
           </div>
-          <div className="level-item has-text-centered">
-            <div>
-              <p className="heading">Following</p>
-              <p className="title">123</p>
-            </div>
-          </div>
-          <div className="level-item has-text-centered">
-            <div>
-              <p className="heading">Followers</p>
-              <p className="title">456K</p>
-            </div>
-          </div>
-          <div className="level-item has-text-centered">
-            <div>
-              <p className="heading">Likes</p>
-              <p className="title">789</p>
-            </div>
-          </div>
-        </nav>
+        </div>
       </div>
     </section>
   </>
