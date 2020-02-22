@@ -7,9 +7,9 @@ const Footer: React.FC = () => (
       <div className="content has-text-centered">
         <p>
           Built with <i className="fad fa-heart-circle has-text-danger" /> by
-          Alex
+          Alexander Jack Hughes
         </p>
-        <p>© {moment().format("YYYY")}</p>
+        <p>All Rights Reserved © {moment().format("YYYY")}</p>
       </div>
     </footer>
   </>
