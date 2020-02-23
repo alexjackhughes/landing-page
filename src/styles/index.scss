@@ -1,3 +1,6 @@
+// Custom Bulma variables
+$button-border-width: 3px;
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
 @import "node_modules/bulmaswatch/default/bulmaswatch";
 @import "./spacers.scss";
@@ -46,3 +49,14 @@ code {
 // .hero {
 //   clip-path: polygon(0 0, 1800px 0, 1800px 90%, 0 100%);
 // }
+
+#hero-title {
+  font-size: 5rem;
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
+}
+
+#hero-tagline {
+  font-size: 1.5rem;
+}

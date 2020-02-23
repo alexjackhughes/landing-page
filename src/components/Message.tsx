@@ -8,17 +8,15 @@ const Message: React.FC = () => (
         <Layout>
           <h2 className="title is-1">So, what's next future friend?</h2>
           <h3 className="subtitle">
-            Right now, I'm pretty happy working towards giving people
-            transparency with their money - but who knows what the future holds?
-            I've been known to dabble in startups, and mentor juniors, and build
-            apps on the side; so if you have something that might be
-            interesting, why not set up a coffee?
+            I'm always open to new ideas and opportunities to grow; from
+            mentoring juniors to building new startups. If there's anything you
+            want to say, here is the button.
           </h3>
-          <button className="button">
-            <span>Let's chat</span>
-            <span className="icon">
-              <i className="fad fa-paper-plane has-text-danger" />
+          <button className="button is-medium is-rounded is-danger is-outlined">
+            <span className="icon is-medium">
+              <i className="fad fa-paper-plane" />
             </span>
+            <span className="has-text-weight-bold	">Let's chat</span>
           </button>
         </Layout>
       </div>

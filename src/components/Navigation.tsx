@@ -9,12 +9,9 @@ const Navigation: React.FC = () => {
         <nav className="navbar">
           <div className="container">
             <div className="navbar-brand">
-              <a className="navbar-item" href="/">
-                <img
-                  src="https://bulma.io/images/bulma-type-white.png"
-                  alt="Logo"
-                />
-              </a>
+              {/* <a className="navbar-item" href="/">
+                <Logo />
+              </a> */}
               <span
                 className={`navbar-burger burger ${isActive && "is-active"}`}
                 data-target="navbarMenuHeroA"
@@ -30,35 +27,33 @@ const Navigation: React.FC = () => {
                 <a className="navbar-item">Work</a>
                 <a className="navbar-item">Resources</a>
                 <span className="navbar-item">
-                  <a className="button is-primary is-inverted">
-                    <span className="icon">
-                      <span className="fa-stack">
-                        <i className="fad fa-paper-plane fa-stack-1x has-text-danger" />
-                      </span>
+                  <button className="button is-rounded is-success is-outlined">
+                    <span className="icon is-medium">
+                      <i className="fad fa-paper-plane" />
                     </span>
-                    <span>Message</span>
-                  </a>
+                    <span className="has-text-weight-bold">message me</span>
+                  </button>
                 </span>
               </div>
             </div>
           </div>
+          {isActive && (
+            <aside className="menu has-text-right is-hidden-desktop">
+              <ul className="menu-list">
+                <li>
+                  <a>Portfolio</a>
+                </li>
+                <li>
+                  <a>Blog</a>
+                </li>
+                <li>
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </aside>
+          )}
         </nav>
       </div>
-      {isActive && (
-        <aside className="menu has-text-right is-hidden-desktop">
-          <ul className="menu-list">
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>Blog</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-          </ul>
-        </aside>
-      )}
     </>
   );
 };

@@ -6,7 +6,7 @@ import ReactRotatingText from "react-rotating-text";
 const items: string[] = [
   "startup founder",
   "Node Backend Engineer",
-  "TypeScript guru",
+  "TypeScript aficionado",
   "React Frontend Developer",
   "coding mentor"
 ];
@@ -17,8 +17,10 @@ const Hero: React.FC = () => (
       <Navigation />
       <div className="hero-body">
         <Layout>
-          <h1 className="title is-1">Hi, I'm Alex!</h1>
-          <h2 className="subtitle">
+          <h1 className="title is-1" id="hero-title">
+            Hi, I'm Alex!
+          </h1>
+          <h2 className="subtitle" id="hero-tagline">
             I'm a <ReactRotatingText items={items} />.
           </h2>
         </Layout>

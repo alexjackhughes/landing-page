@@ -19,7 +19,7 @@ const Section: React.FC<Props> = ({
 }) => (
   <>
     <section className="hero is-info is-fullheight">
-      <div className="hero-head has-margin-top-large">
+      <div className="hero-head has-margin-top-giant">
         <div className="container">
           <h2 className="title is-1 is-pulled-right has-right-margin-on-mobile">
             <CountUp
