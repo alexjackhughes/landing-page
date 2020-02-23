@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Message from "../components/Message";
 
-import { ReactComponent as TopCurve } from "../images/curve-primary-top.svg";
 import { ReactComponent as BottomCurve } from "../images/curve-primary-bottom.svg";
 
 const SVG_STYLE = { display: "block", marginBottom: "-0.5rem" };

@@ -24,10 +24,10 @@ const Navigation: React.FC = () => {
             </div>
             <div id="navbarMenuHeroA" className="navbar-menu">
               <div className="navbar-end">
-                <a className="navbar-item">Work</a>
-                <a className="navbar-item">Resources</a>
+                <a className="navbar-item has-text-weight-bold">WORK</a>
+                <a className="navbar-item has-text-weight-bold">BLOG</a>
                 <span className="navbar-item">
-                  <button className="button is-rounded is-primary is-outlined">
+                  <button className="button is-rounded is-link is-outlined">
                     <span className="icon is-medium">
                       <i className="fad fa-paper-plane" />
                     </span>

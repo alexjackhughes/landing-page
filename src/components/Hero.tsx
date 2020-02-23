@@ -26,7 +26,8 @@ const Hero: React.FC = () => (
             Hi, I'm Alex!
           </h1>
           <h2 className="subtitle" id="hero-tagline">
-            I'm a <ReactRotatingText items={items} />.
+            I'm a{" "}
+            <ReactRotatingText items={items} className="has-text-primary" />.
           </h2>
         </Layout>
       </div>
