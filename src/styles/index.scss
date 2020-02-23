@@ -1,5 +1,12 @@
 // Custom Bulma variables
 $button-border-width: 3px;
+$white: #fafafa;
+$grey-darker: #1b2836;
+$grey-dark: #9ca8ac;
+
+$footer-background-color: #1b2836;
+
+$primary: #5db4ed;
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
 @import "node_modules/bulmaswatch/default/bulmaswatch";
@@ -22,7 +29,7 @@ code {
 }
 
 .has-right-margin-on-mobile {
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1024px) {
     margin-right: 2rem;
   }
 }

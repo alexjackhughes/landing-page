@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
                 <a className="navbar-item">Work</a>
                 <a className="navbar-item">Resources</a>
                 <span className="navbar-item">
-                  <button className="button is-rounded is-success is-outlined">
+                  <button className="button is-rounded is-primary is-outlined">
                     <span className="icon is-medium">
                       <i className="fad fa-paper-plane" />
                     </span>

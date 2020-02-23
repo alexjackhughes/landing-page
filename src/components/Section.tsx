@@ -18,8 +18,8 @@ const Section: React.FC<Props> = ({
   counter: { start, end }
 }) => (
   <>
-    <section className="hero is-info is-fullheight">
-      <div className="hero-head has-margin-top-giant">
+    <section className="hero is-primary is-fullheight">
+      <div className="hero-head has-margin-top-large">
         <div className="container">
           <h2 className="title is-1 is-pulled-right has-right-margin-on-mobile">
             <CountUp

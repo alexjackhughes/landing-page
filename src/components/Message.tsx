@@ -1,9 +1,11 @@
 import React from "react";
 import Layout from "./Layout";
 
+import { ReactComponent as Curve } from "../images/curve-dark-top.svg";
+
 const Message: React.FC = () => (
   <>
-    <div className="hero is-primary is-medium is-fullheight">
+    <div className="hero is-medium is-fullheight">
       <div className="hero-body">
         <Layout>
           <h2 className="title is-1">So, what's next future friend?</h2>
@@ -12,13 +14,16 @@ const Message: React.FC = () => (
             mentoring juniors to building new startups. If there's anything you
             want to say, here is the button.
           </h3>
-          <button className="button is-medium is-rounded is-danger is-outlined">
+          <button className="button is-medium is-rounded is-primary is-outlined">
             <span className="icon is-medium">
               <i className="fad fa-paper-plane" />
             </span>
             <span className="has-text-weight-bold	">Let's chat</span>
           </button>
         </Layout>
+      </div>
+      <div className="hero-bottom">
+        <Curve style={{ display: "block", marginBottom: "-0.5rem" }} />
       </div>
     </div>
   </>

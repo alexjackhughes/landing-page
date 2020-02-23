@@ -3,7 +3,7 @@ import moment from "moment";
 
 const Footer: React.FC = () => (
   <>
-    <footer className="footer">
+    <footer className="footer is-primary">
       <div className="content has-text-centered">
         <p>
           Built with <i className="fad fa-heart-circle has-text-danger" />
