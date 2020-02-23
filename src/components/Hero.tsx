@@ -1,6 +1,15 @@
 import React from "react";
 import Navigation from "./Navigation";
 import Layout from "./Layout";
+import ReactRotatingText from "react-rotating-text";
+
+const items: string[] = [
+  "startup founder",
+  "Node Backend Engineer",
+  "TypeScript guru",
+  "React Frontend Developer",
+  "coding mentor"
+];
 
 const Hero: React.FC = () => (
   <>
@@ -10,7 +19,7 @@ const Hero: React.FC = () => (
         <Layout>
           <h1 className="title is-1">Hi, I'm Alex!</h1>
           <h2 className="subtitle">
-            My name is Alexander Jack Hughes, but you can call me Alex.
+            I'm a <ReactRotatingText items={items} />.
           </h2>
         </Layout>
       </div>

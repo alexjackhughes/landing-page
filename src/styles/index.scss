@@ -13,18 +13,6 @@ body {
   font-weight: 900;
 }
 
-h1 {
-  font-size: "5rem";
-}
-
-.has-icon-background {
-  background: #ffc0c0;
-  width: 50px;
-  height: 50px;
-  margin: 30px;
-  border-radius: 50%;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -35,3 +23,26 @@ code {
     margin-right: 2rem;
   }
 }
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// TODO: could use this with a similiar colour background
+// to have a jaunty layout.
+// .hero {
+//   clip-path: polygon(0 0, 1800px 0, 1800px 90%, 0 100%);
+// }

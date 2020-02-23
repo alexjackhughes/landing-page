@@ -1,6 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import Layout from "./Layout";
+import Blurb from "./Blurb";
 
 interface Props {
   title: string;
@@ -41,27 +42,9 @@ const Section: React.FC<Props> = ({
           <div className="columns">
             <div className="column is-one-third">
               <nav className="level is-mobile">
-                <div className="level-item has-text-centered">
-                  <div>
-                    <span className="icon fad fa-acorn fa-3x is-large has-text-white" />
-                    <p className="heading">Followers</p>
-                    <p className="title">456K</p>
-                  </div>
-                </div>
-                <div className="level-item has-text-centered">
-                  <div>
-                    <span className="icon fad fa-acorn fa-3x is-large has-text-white" />
-                    <p className="heading">Followers</p>
-                    <p className="title">456K</p>
-                  </div>
-                </div>
-                <div className="level-item has-text-centered">
-                  <div>
-                    <span className="icon fad fa-acorn fa-3x is-large has-text-white" />
-                    <p className="heading">Followers</p>
-                    <p className="title">456K</p>
-                  </div>
-                </div>
+                <Blurb icon="fa-acorn" heading="Followers" title="456K" />
+                <Blurb icon="fa-acorn" heading="Followers" title="456K" />
+                <Blurb icon="fa-acorn" heading="Followers" title="456K" />
               </nav>
             </div>
           </div>
