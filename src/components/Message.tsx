@@ -23,7 +23,7 @@ const Message: React.FC = () => (
         </Layout>
       </div>
       <div className="hero-bottom">
-        <Curve style={{ display: "block", marginBottom: "-0.5rem" }} />
+        <Curve className="curve flip" />
       </div>
     </div>
   </>

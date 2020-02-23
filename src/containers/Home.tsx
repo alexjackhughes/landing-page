@@ -6,8 +6,6 @@ import Message from "../components/Message";
 
 import { ReactComponent as BottomCurve } from "../images/curve-primary-bottom.svg";
 
-const SVG_STYLE = { display: "block", marginBottom: "-0.5rem" };
-
 function Home() {
   return (
     <>
@@ -17,7 +15,7 @@ function Home() {
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         counter={{ start: 2015, end: 2018 }}
       />
-      <BottomCurve style={SVG_STYLE} />
+      <BottomCurve className="curve" />
       <Message />
       <Footer />
     </>

@@ -7,7 +7,7 @@ $grey-dark: #9ca8ac;
 $footer-background-color: #1b2836;
 
 $primary: #5db4ed;
-$blue: hsl(171, 100%, 41%);
+$blue: #5db4ed;
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
 @import "node_modules/bulmaswatch/default/bulmaswatch";
@@ -67,4 +67,23 @@ code {
 
 #hero-tagline {
   font-size: 1.5rem;
+}
+
+.curve {
+  display: block;
+  margin-bottom: -0.5rem;
+}
+
+.flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.transparent {
+  opacity: 0.5;
+}
+
+.navbar-burger span {
+  height: 2px;
+  color: $grey-darker;
 }

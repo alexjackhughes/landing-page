@@ -41,13 +41,15 @@ const Navigation: React.FC = () => {
             <aside className="menu has-text-right is-hidden-desktop">
               <ul className="menu-list">
                 <li>
-                  <a>Portfolio</a>
+                  <a className="has-text-weight-bold is-size-2-mobile">WORK</a>
                 </li>
                 <li>
-                  <a>Blog</a>
+                  <a className="has-text-weight-bold is-size-2-mobile">BLOG</a>
                 </li>
                 <li>
-                  <a>Contact</a>
+                  <a className="has-text-weight-bold is-size-2-mobile">
+                    MESSAGE
+                  </a>
                 </li>
               </ul>
             </aside>

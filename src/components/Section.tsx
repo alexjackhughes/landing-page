@@ -21,7 +21,10 @@ const Section: React.FC<Props> = ({
     <section className="hero is-primary is-fullheight">
       <div className="hero-head has-margin-top-large">
         <div className="container">
-          <h2 className="title is-1 is-pulled-right has-right-margin-on-mobile">
+          <h2
+            className="title is-1 is-pulled-right has-right-margin-on-mobile transparent"
+            id="hero-title"
+          >
             <CountUp
               start={start}
               end={end}
