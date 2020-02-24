@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import Layout from "./Layout";
 import ReactRotatingText from "react-rotating-text";
 
-import { ReactComponent as TopCurve } from "../images/curve-primary-top.svg";
+import { ReactComponent as TopCurve } from "../images/curves/primary.svg";
 
 const items: string[] = [
   "startup founder",
@@ -13,8 +13,6 @@ const items: string[] = [
   "AWS-certified architect",
   "coding mentor"
 ];
-
-const SVG_STYLE = { display: "block", marginBottom: "-0.5rem" };
 
 const Hero: React.FC = () => (
   <>
@@ -32,7 +30,7 @@ const Hero: React.FC = () => (
         </Layout>
       </div>
       <div className="hero-bottom">
-        <TopCurve style={SVG_STYLE} className="is-marginless	is-paddingless" />
+        <TopCurve className="curve is-marginless is-paddingless flip-horizontal" />
       </div>
     </div>
   </>

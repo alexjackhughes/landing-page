@@ -52,12 +52,6 @@ code {
   }
 }
 
-// TODO: could use this with a similiar colour background
-// to have a jaunty layout.
-// .hero {
-//   clip-path: polygon(0 0, 1800px 0, 1800px 90%, 0 100%);
-// }
-
 #hero-title {
   font-size: 5rem;
   @media only screen and (max-width: 600px) {
@@ -74,16 +68,25 @@ code {
   margin-bottom: -0.5rem;
 }
 
-.flip {
+.flip-horizontal {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
+.flip-vertical {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
 .transparent {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .navbar-burger span {
   height: 2px;
   color: $grey-darker;
+}
+
+.white-space {
+  white-space: normal;
 }

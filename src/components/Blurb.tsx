@@ -9,7 +9,7 @@ interface Props {
 const Blurb: React.FC<Props> = ({ icon, heading, title }) => (
   <div className="level-item has-text-centered">
     <div>
-      <span className={`icon fad ${icon} fa-3x is-large has-text-white`} />
+      <span className={`icon fad ${icon} fa-3x is-large has-text-danger`} />
       <p className="heading">{heading}</p>
       <p className="title">{title}</p>
     </div>

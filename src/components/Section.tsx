@@ -2,6 +2,7 @@ import React from "react";
 import CountUp from "react-countup";
 import Layout from "./Layout";
 import Blurb from "./Blurb";
+import { ReactComponent as TopCurve } from "../images/curves/light.svg";
 
 interface Props {
   title: string;
@@ -18,7 +19,7 @@ const Section: React.FC<Props> = ({
   counter: { start, end }
 }) => (
   <>
-    <section className="hero is-primary is-fullheight">
+    <section className="hero is-medium is-fullheight">
       <div className="hero-head has-margin-top-large">
         <div className="container">
           <h2
@@ -52,6 +53,9 @@ const Section: React.FC<Props> = ({
             </div>
           </div>
         </div>
+      </div>
+      <div className="hero-bottom">
+        <TopCurve className="curve is-marginless is-paddingless" />
       </div>
     </section>
   </>

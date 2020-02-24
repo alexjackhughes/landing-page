@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 
-import { ReactComponent as Curve } from "../images/curve-dark-top.svg";
+import { ReactComponent as Curve } from "../images/curves/dark.svg";
 
 const Message: React.FC = () => (
   <>
