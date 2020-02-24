@@ -12,10 +12,31 @@ function Home() {
       <Hero />
       <About />
       <Section
-        title="#2 Developer at xibo"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        counter={{ start: 2015, end: 2018 }}
+        title="Product Manager at xibo"
+        description={`Our goal was to disrupt the event industry with innovative marketing services that 10x our client’s engagement and reach. My role was to develop these products; creating mockups and leading our dev team in figuring out how we could scale and automate.`}
+        counter={{ start: 2013, end: 2015 }}
+        icons={[
+          {
+            icon: "fa-sack-dollar",
+            heading: "in revenue",
+            title: "1mil",
+            color: "has-text-success"
+          },
+          {
+            icon: "fa-users-cog",
+            heading: "dev team",
+            title: "3+",
+            color: "has-text-info"
+          },
+          {
+            icon: "fa-layer-plus",
+            heading: "new services",
+            title: "2",
+            color: "has-text-danger"
+          }
+        ]}
       />
+
       <Message />
       <Footer />
     </>

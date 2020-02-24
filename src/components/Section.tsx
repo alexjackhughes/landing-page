@@ -1,7 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import Layout from "./Layout";
-import Blurb from "./Blurb";
+import Blurb, { Icon } from "./Blurb";
 import { ReactComponent as TopCurve } from "../images/curves/light.svg";
 
 interface Props {
@@ -11,12 +11,14 @@ interface Props {
     start: number;
     end: number;
   };
+  icons: Icon[];
 }
 
 const Section: React.FC<Props> = ({
   title,
   description,
-  counter: { start, end }
+  counter: { start, end },
+  icons
 }) => (
   <>
     <section className="hero is-medium is-fullheight">
@@ -30,6 +32,7 @@ const Section: React.FC<Props> = ({
               start={start}
               end={end}
               duration={3}
+              // startOnMount={() => setTimeout(5)}
               delay={5} // TODO: set onStart with Tornis based on percentage of page viewed
             />
           </h2>
@@ -38,7 +41,7 @@ const Section: React.FC<Props> = ({
       <div className="hero-body">
         <Layout>
           <h2 className="title is-1">{title}</h2>
-          <h3 className="subtitle">{description}</h3>
+          <h3 className="subtitle white-space">{description}</h3>
         </Layout>
       </div>
       <div className="hero-foot has-margin-bottom-large">
@@ -46,9 +49,9 @@ const Section: React.FC<Props> = ({
           <div className="columns">
             <div className="column is-one-third">
               <nav className="level is-mobile">
-                <Blurb icon="fa-acorn" heading="Followers" title="456K" />
-                <Blurb icon="fa-acorn" heading="Followers" title="456K" />
-                <Blurb icon="fa-acorn" heading="Followers" title="456K" />
+                {icons.map((blurb, index) => (
+                  <Blurb key={index} blurb={blurb} />
+                ))}
               </nav>
             </div>
           </div>

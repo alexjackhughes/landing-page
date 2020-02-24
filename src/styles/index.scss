@@ -87,6 +87,7 @@ code {
   color: $grey-darker;
 }
 
-.white-space {
-  white-space: normal;
+.level-item:hover {
+  transition: padding 500ms;
+  padding-bottom: 3rem;
 }
