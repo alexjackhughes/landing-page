@@ -24,6 +24,7 @@ const Navigation: React.FC = () => {
             </div>
             <div id="navbarMenuHeroA" className="navbar-menu">
               <div className="navbar-end">
+                <a className="navbar-item has-text-weight-bold">HOME</a>
                 <a className="navbar-item has-text-weight-bold">WORK</a>
                 <a className="navbar-item has-text-weight-bold">BLOG</a>
                 <span className="navbar-item">
@@ -41,15 +42,15 @@ const Navigation: React.FC = () => {
             <aside className="menu has-text-right is-hidden-desktop">
               <ul className="menu-list">
                 <li>
-                  <a className="has-text-weight-bold is-size-2-mobile">WORK</a>
-                </li>
-                <li>
-                  <a className="has-text-weight-bold is-size-2-mobile">BLOG</a>
+                  <a className="has-text-weight-bold is-size-2-mobile">HOME</a>
                 </li>
                 <li>
                   <a className="has-text-weight-bold is-size-2-mobile">
                     MESSAGE
                   </a>
+                </li>
+                <li>
+                  <a className="has-text-weight-bold is-size-2-mobile">BLOG</a>
                 </li>
               </ul>
             </aside>

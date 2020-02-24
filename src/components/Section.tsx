@@ -5,6 +5,7 @@ import Blurb, { Icon } from "./Blurb";
 import { ReactComponent as TopCurve } from "../images/curves/light.svg";
 
 interface Props {
+  company: string;
   title: string;
   description: string;
   counter: {
@@ -15,6 +16,7 @@ interface Props {
 }
 
 const Section: React.FC<Props> = ({
+  company,
   title,
   description,
   counter: { start, end },
@@ -40,6 +42,7 @@ const Section: React.FC<Props> = ({
       </div>
       <div className="hero-body">
         <Layout>
+          <p className="heading is-size-7">{company}</p>
           <h2 className="title is-1">{title}</h2>
           <h3 className="subtitle white-space">{description}</h3>
         </Layout>

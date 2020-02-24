@@ -9,7 +9,7 @@ const About: React.FC = () => (
         <Layout>
           <h2 className="title is-1">Who the heck am I?</h2>
           <h3 className="subtitle">
-            I'm a Alexander Jack Hughes. But you can call me Alex.
+            I'm Alexander Jack Hughes. But you can call me Alex.
           </h3>
           <h3 className="subtitle">
             To give you a brief history lesson; I've been building software
