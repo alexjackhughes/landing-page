@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./Layout";
-import { ReactComponent as BottomCurve } from "../images/curves/light.svg";
+import { ReactComponent as BottomCurve } from "../images/curves/white.svg";
 
 const About: React.FC = () => (
   <>

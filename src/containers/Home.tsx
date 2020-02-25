@@ -6,6 +6,8 @@ import Message from "../components/Message";
 
 import About from "../components/About";
 
+import { ReactComponent as LightCurve } from "../images/curves/light.svg";
+
 function Home() {
   return (
     <>
@@ -14,6 +16,7 @@ function Home() {
       <Section
         title="Product Manager"
         company="xibo"
+        color="is-white"
         description={`Our goal was to disrupt the event industry with innovative marketing services that 10x our client’s engagement and reach. My role was to develop these products; creating mockups and leading our dev team in figuring out how we could scale and automate.`}
         counter={{ start: 2013, end: 2015 }}
         icons={[
@@ -37,6 +40,7 @@ function Home() {
           }
         ]}
       />
+      <LightCurve className="curve is-marginless is-paddingless" />
       <Section
         title="Freelance Web Designer"
         company="alexhughes.io"
@@ -63,8 +67,10 @@ function Home() {
           }
         ]}
       />
+      <LightCurve className="curve flip-vertical is-marginless is-paddingless" />
       <Section
         title="Software Engineer"
+        color="is-white"
         company="Huckletree"
         description={`As the #2 technical hire at Huckletree we were focused on iterating fast, and building systems that could scale across our five locations around Europe, working mainly in TypeScript (Node + React).`}
         counter={{ start: 2017, end: 2019 }}
@@ -89,6 +95,7 @@ function Home() {
           }
         ]}
       />
+      <LightCurve className="curve is-marginless is-paddingless" />
       <Section
         title="Software Engineer"
         company="Tumelo"
@@ -115,6 +122,7 @@ function Home() {
           }
         ]}
       />
+      <LightCurve className="curve flip-vertical is-marginless is-paddingless" />
       <Message />
       <Footer />
     </>
