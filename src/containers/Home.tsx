@@ -17,7 +17,7 @@ function Home() {
         title="Product Manager"
         company="xibo"
         color="is-white"
-        description={`Our goal was to disrupt the event industry with innovative marketing services that 10x our client’s engagement and reach. My role was to develop these products; creating mockups and leading our dev team in figuring out how we could scale and automate.`}
+        description={`Our goal was to disrupt the event industry with innovative marketing services that 10x our client’s engagement and reach. My role was to develop these products; creating UI mockups and leading our dev team in figuring out how we could scale and automate.`}
         counter={{ start: 2013, end: 2015 }}
         icons={[
           {

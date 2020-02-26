@@ -33,7 +33,10 @@ const Contact: React.FC = () => (
             </div>
             <div className="field is-primary">
               <p className="control ">
-                <textarea className="textarea" placeholder="Textarea" />
+                <textarea
+                  className="textarea"
+                  placeholder="Write me a message"
+                />
               </p>
             </div>
             <button className="button is-rounded is-primary is-outlined">
